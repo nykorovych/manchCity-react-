@@ -10,8 +10,10 @@
     "@testing-library/user-event": "^7.2.1",
     "d3-ease": "^1.0.6",
     "d3-interpolate": "^1.4.0",
+    "firebase": "^7.17.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-firebase": "^2.2.8",
     "react-move": "^6.4.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
