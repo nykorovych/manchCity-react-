@@ -9,7 +9,7 @@ import { firebase } from "./firebase";
 const App = (props) => {
   return (
     <BrowserRouter>
-      <Routes user ={props.user}></Routes>
+      <Routes user={props.user}></Routes>
     </BrowserRouter>
   );
 };
