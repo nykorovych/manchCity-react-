@@ -202,7 +202,7 @@ class AddEditMatch extends Component {
         this.setState({
             matchId,
             formType:type,
-            formdata: newFormdata,
+            formdata: newFormdata, 
             teams
         })
 

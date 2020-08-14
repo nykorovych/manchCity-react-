@@ -26,13 +26,11 @@ export const Tag = (props) => {
 export const firebaseLooper = (snapshot) => {
   let data = [];
   snapshot.forEach((childSnapshot) => {
-    console.log(childSnapshot)
     data.push({
       ...childSnapshot.val(),
       id: childSnapshot.key,
     });
   });
-  console.log(data)
   return data;
 };
 

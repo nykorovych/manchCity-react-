@@ -11,6 +11,9 @@ import AdminMatches from "./Components/admin/matches";
 import PublicRoutes from "./Components/authRoutes/PublicRoutes";
 import PrivateRoutes from "./Components/authRoutes/PrivateRoutes";
 import AddEditPlayers from "./Components/admin/players/addEditPlayers";
+import TheTeam from "./Components/theTeam";
+import TheMatches from "./Components/theMatches";
+import NotFound from "./Components/ui/not_found";
 
 const routes = (props) => {
   return (
@@ -64,6 +67,20 @@ const routes = (props) => {
           {...props}
           restricted={false}
           exact
+          path="/the_team"
+          component={TheTeam}
+        />
+         <PublicRoutes
+          {...props}
+          restricted={false}
+          exact
+          path="/the_matches"
+          component={TheMatches}
+        />
+        <PublicRoutes
+          {...props}
+          restricted={false}
+          exact
           path="/"
           component={Home}
         />
@@ -73,6 +90,12 @@ const routes = (props) => {
           exact
           path="/signin"
           component={SignIn}
+        />
+        <PublicRoutes
+          {...props}
+          restricted={false}
+          
+          component={NotFound}
         />
         {/* <Route exact component={Dashboard} path="/dashboard"></Route> */}
       </Switch>
